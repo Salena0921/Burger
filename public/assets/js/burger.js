@@ -1,7 +1,7 @@
 $(function () {
-    $(".change-devour").on("click", function (event) {
+    $(".change-devoured").on("click", function (event) {
         var id = $(this).data("id");
-        var newDevoured = $(this).data("newdevour");
+        var newDevoured = $(this).data("newdevoured");
 
         var newDevoured = {
             devoured: newDevoured
@@ -23,7 +23,7 @@ $(function () {
         event.preventDefault();
 
         var newBurger = {
-            name: $("#ca").val().trim(),
+            name: $("#bu").val().trim(),
             devoured: $("[name=devoured]:checked").val().trim()
         };
 
